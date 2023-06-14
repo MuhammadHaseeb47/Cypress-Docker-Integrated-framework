@@ -16,7 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 // import { generateRandomSSNumber } from "../../Integration/Utils/utils";
-import { generateRandomSSNumber } from '../Integration/Utils/utils';
+// import { generateRandomSSNumber } from '../Integration/Utils/utils';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
@@ -24,14 +24,14 @@ import { generateRandomSSNumber } from '../Integration/Utils/utils';
 
 require('cypress-xpath');
 
-before(function() {
-    cy.fixture(Cypress.env('fixtureFile')).then(function(testdata) {
-      this.testdata = testdata
-    })
-  })
-beforeEach(function() {
-    cy.fixture('testdata').then((data) => {
-      this.data = data;
-      this.data.CreateEmployeeBody.ssNumber = generateRandomSSNumber();
-    });
-  });
+// before(function() {
+//     cy.fixture(Cypress.env('fixtureFile')).then(function(testdata) {
+//       this.testdata = testdata
+//     })
+//   })
+// beforeEach(function() {
+//     cy.fixture('testdata').then((data) => {
+//       this.data = data;
+//       this.data.CreateEmployeeBody.ssNumber = generateRandomSSNumber();
+//     });
+//   });
