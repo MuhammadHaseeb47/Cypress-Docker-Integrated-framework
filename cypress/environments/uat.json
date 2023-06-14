@@ -1,0 +1,12 @@
+{
+    "env": {
+      "environment":    "uat",
+      "app-url":        "https://www.mashvisor.com/auth",
+      "username":       "abc@mailinator.com",
+      "password":       "Abcd@123",
+      "fixtureFile":    "dynamicData.json",  
+      "orange-url":     "opensource-demo.orangehrmlive.com",
+      "orangeUsername": "Admin",
+      "orangePassword": "Abcd@123"
+      }
+}
