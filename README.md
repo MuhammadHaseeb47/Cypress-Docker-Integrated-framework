@@ -16,14 +16,21 @@ Welcome to the Docker-Integrated Framework repository by Muhammad Haseeb (haseeb
 ### Build
 
 * Clone the Repo:
+```
     git clone https://github.com/MuhammadHaseeb47/Cypress-Docker-Integrated-framework.git
+```
 * Download NodeModules
+```
     npm install
+```
 * How to run tests
+```
     npm cypress open
+```
 * How to run tests on command prompt
+```
     npm run test
-
+```
 ### Executing program
 
 * How to run the program
