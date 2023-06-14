@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec cypress/e2e/**/*.js",
-    "test:parallel": "cypress-parallel cypress/e2e/**/*.js -t 2 -s test"
+    "test": "cypress run --spec cypress/e2e/**/*.js"
   },
   "author": "",
   "license": "ISC",
