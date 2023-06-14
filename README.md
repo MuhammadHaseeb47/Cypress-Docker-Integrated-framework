@@ -13,7 +13,7 @@ Welcome to the Docker-Integrated Framework repository by Muhammad Haseeb (haseeb
 * Download latest Visual Studio Code
 * Download Nodejs
 
-### Build
+### Build and Test
 
 * Clone the Repo:
 ```
@@ -31,7 +31,7 @@ Welcome to the Docker-Integrated Framework repository by Muhammad Haseeb (haseeb
 ```
     npm run test
 ```
-### Executing program
+### Executing tests in Docker
 
 * How to run the program
 * Step-by-step bullets
@@ -42,5 +42,9 @@ code blocks for commands
 ## Authors
 
 Muhammad Haseeb
+```
 (haseebshafiq47@gmail.com)
+```
+```
 (https://www.linkedin.com/in/muhammad-haseeb47/)
+```
