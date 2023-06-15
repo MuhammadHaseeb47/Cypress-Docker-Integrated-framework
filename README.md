@@ -77,7 +77,7 @@ https://www.docker.com/products/docker-desktop/
     docker-compose up
 ```
 
-* Check Docker Desktop app and observe teh containers are running in containers tab on the left side
+* Check Docker Desktop app and observe the containers are running in containers tab on the left side
 
 
 ## Authors
