@@ -72,6 +72,7 @@ https://www.docker.com/products/docker-desktop/
 ["npx","cypress","run","--browser","firefox"]
 ```
 
+* If you want to run them in parallel just comment the third container (e2e) and follow the steps
 * After updating the code run the following command
 ```
     docker-compose up
