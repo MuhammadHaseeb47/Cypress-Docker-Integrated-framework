@@ -33,8 +33,21 @@ Welcome to the Docker-Integrated Framework repository by Muhammad Haseeb (haseeb
 ```
 ### Executing tests in Docker
 
-* How to run the program
-* Step-by-step bullets
+* Create a docker image by running following command in this command cypress-docker is a image name that can be changed according to your choice and replace it everywhere
+```
+    docker build -t cypress-docker:1.0.0 .
+```
+
+* In docker-compose.yml file the first two containers will run the tests in parallel.
+* The first container (e2e-electron) will run the tests in electron browser and will run the tests found in login folder.
+* The second container (e2e-chrome) will run the tests in chrome browser and will run the tests found in logout folder.
+* The third container (e2e) will run all the tests in firefox browser and will run all the tests found in e2e folder.
+
+#### Note:
+
+* You can customize the containers according to your need.
+
+
 ```
 code blocks for commands
 ```
