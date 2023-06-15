@@ -1,6 +1,6 @@
 # Cypress-Docker-Integrated-framework
 
-In this project I integrated Docker and cypress together.
+In this project I implemented Page Object Model and integrated Docker in it.
 
 ## Description
 
@@ -43,8 +43,8 @@ code blocks for commands
 
 Muhammad Haseeb
 ```
-(haseebshafiq47@gmail.com)
+haseebshafiq47@gmail.com
 ```
 ```
-(https://www.linkedin.com/in/muhammad-haseeb47/)
+https://www.linkedin.com/in/muhammad-haseeb47/
 ```

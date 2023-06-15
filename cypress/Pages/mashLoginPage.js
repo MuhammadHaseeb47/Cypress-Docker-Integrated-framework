@@ -22,6 +22,22 @@ class LoginMash {
       return cy.xpath('//button[text()="Unlock a free trial"]');
     }
 
+    getProfilePictureLogo(){
+      return cy.get("button._profileButton_sh5m4_106");
+    }
+
+    getLogoutButton(){
+      return cy.xpath('//button[text()="Log out"]');
+    }
+
+    getMainPageVerification(){
+      return cy.get("#location_text")
+    }
+
+    getStartAnalyzingText(){
+      return cy.xpath('//span[text()="Start Analyzing"]');
+    }
+
     typeUserName(userName){
       this.getUserName().type(userName,{force:true});
     }
@@ -33,6 +49,15 @@ class LoginMash {
     clickLoginButton(){
       this.getLoginButton().click();
     }
+
+    clickProfilePictureLogo(){
+      this.getProfilePictureLogo().click();
+    }
+
+    clickLogoutButton(){
+      this.getLogoutButton().click();
+    }
+
   
   }
   export default LoginMash;
