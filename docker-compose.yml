@@ -1,0 +1,27 @@
+version: '3'
+services:
+  e2e-electron:
+    image: cypress-docker:1.0.0 # Replace with the name and tag of your Cypress Docker image
+    volumes:
+      - ./cypress/e2e/login:/cypress-docker-image/cypress/e2e/login
+      - ./cypress.config.js:/cypress-docker-image/Cypress-Docker-Integrated-framework/cypress.config.js # Mount your local Cypress tests directory into the container
+    working_dir: /cypress-docker-image
+    command: ["npx","cypress","run","--spec","./cypress/e2e/login/*.js","--browser","electron"] # Command to execute Cypress tests (change as per your requirements)
+
+  e2e-chrome:
+    image: cypress-docker:1.0.0 # Replace with the name and tag of your Cypress Docker image
+    volumes:
+      - ./cypress/e2e/logout:/cypress-docker-image/cypress/e2e/logout
+      - ./cypress.config.js:/cypress-docker-image/Cypress-Docker-Integrated-framework/cypress.config.js # Mount your local Cypress tests directory into the container
+      # - ./cypress.congfig.js:/app/cypress.config.js # Mount your Cypress configuration file
+    working_dir: /cypress-docker-image
+    command: ["npx","cypress","run","--spec","./cypress/e2e/logout/*.js","--browser","chrome"] # Command to execute Cypress tests (change as per your requirements)
+
+  # e2e-firefox:
+  #   image: cypress-docker:1.0.0 # Replace with the name and tag of your Cypress Docker image
+  #   volumes:
+  #     - ./cypress/e2e/RTSAPIV2:/cypress-docker-image/cypress/e2e/RTSAPIV2 
+  #     - ./cypress.config.js:/cypress-docker-image/Cypress-Docker-Integrated-framework/cypress.config.js # Mount your local Cypress tests directory into the container
+  #     # - ./cypress.congfig.js:/app/cypress.config.js # Mount your Cypress configuration file
+  #   working_dir: /cypress-docker-image
+  #   command: ["npx","cypress","run","--spec","./cypress/e2e/RTSAPIV2/APITesting.js","--browser","firefox"] # Command to execute Cypress tests (change as per your requirements)

@@ -20,6 +20,34 @@ class LoginOrange {
         return cy.xpath('//h6[text()="Dashboard"]');
     }
 
+    getProfileName(){
+        return cy.get('.oxd-userdropdown-name');
+    }
+
+    getLogoutButton(){
+        return cy.xpath('//a[text()="Logout"]');
+    }
+
+    getMyInfo(){
+        return cy.xpath('//span[text()="My Info"]');
+    }
+
+    getPersonalDetailsText(){
+        return cy.xpath('//h6[text()="Personal Details"]')
+    }
+
+    clickMyInfoButton(){
+        this.getMyInfo().click();
+    }
+
+    clickProfileNameButton(){
+        this.getProfileName().click();
+    }
+
+    clickLogoutButton(){
+        this.getLogoutButton().click();
+    }
+
     typeUserName(userName){
         this.getUserName().type(userName,{force:true});
     }

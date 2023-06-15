@@ -23,7 +23,12 @@ import './commands'
 ///import 'cypress-mochawesome-reporter/register';
 
 require('cypress-xpath');
-
+// cypress/support/index.js
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // Prevent Cypress from failing the test on uncaught exceptions
+    return false;
+  });
+  
 // before(function() {
 //     cy.fixture(Cypress.env('fixtureFile')).then(function(testdata) {
 //       this.testdata = testdata

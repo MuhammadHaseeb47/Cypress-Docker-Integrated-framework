@@ -22,6 +22,8 @@ module.exports = defineConfig({
   pageLoadTimeout: 80000,
   requestTimeout: 120000,
   responseTimeout: 120000,
+  "uncaughtException": false,
+  "chromeWebSecurity": false,
   e2e: {
     setupNodeEvents(on, config) {
     require('cypress-mochawesome-reporter/plugin')(on);
